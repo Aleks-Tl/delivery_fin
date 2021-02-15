@@ -2002,6 +2002,20 @@ input[type="checkbox"]:checked ~ .checkbox__icon:before {
     top: 0px;
     font-size: 35px;
   }
+
+  .modal__close {
+    top: auto;
+    right: auto;
+    left: 240px;
+    bottom: 0px;
+  }
+
+  .modal-calc__close {
+    right: 0;
+    top: auto;
+    bottom: 0px;
+    font-size: 40px;
+  }
 }
 
 @media \0screen\,screen\9 {
