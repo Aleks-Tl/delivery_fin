@@ -20,6 +20,7 @@ function testWebP(callback) {
 $(document).ready(function() {
     $('.header__burger, .menu__list, .ovelay').click(function(event) {
         $('.header__burger, .menu__list, .overlay').toggleClass('active');
+        $('body').toggleClass('lock');
     });
 });
 // Слайдер
@@ -131,6 +132,9 @@ $(document).ready(function(){
     valideForms('#modal__call');
     valideForms('#form-consultation');
     valideForms('#form-questions');
+
+
+    
   });
   
 // Калькулятор расчета стоимости доставки груза
