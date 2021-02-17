@@ -18,10 +18,17 @@ function testWebP(callback) {
     });
 
 $(document).ready(function() {
-    $('.header__burger, .menu__list, .ovelay').click(function(event) {
+    $('.header__burger, .menu__list').click(function(event) {
         $('.header__burger, .menu__list, .overlay').toggleClass('active');
         $('body').toggleClass('lock');
     });
+
+    $(document).ready(function() {
+      $('.menu__link').click(function(event) {
+          $('.header__burger, .menu__list, .overlay').removeClass('active');
+          $('body').removeClass('lock')
+      });
+  });
 });
 // Слайдер
 
